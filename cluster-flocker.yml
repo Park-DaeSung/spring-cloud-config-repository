@@ -1,0 +1,20 @@
+cluster_name: sourcelair
+agent_nodes:
+ - {public: 46.16.191.30, private: 46.16.191.30}
+ - {public: 46.16.191.26, private: 46.16.191.26}
+ - {public: 46.16.191.28, private: 46.16.191.28}
+ - {public: 46.16.191.29, private: 46.16.191.29}
+ - {public: 159.8.55.116, private: 159.8.55.116}
+control_node: 46.16.191.30
+users:
+ - sourcelair
+os: ubuntu
+remote_server_username: root
+private_key_path: EDIT_THIS_VALUE
+agent_config:
+  version: 1
+  control-service:
+     hostname: 46.16.191.30
+     port: 4524
+  dataset:
+     backend: "zfs"
